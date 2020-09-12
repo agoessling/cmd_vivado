@@ -24,7 +24,7 @@ def main():
       '-nojournal'
   ]
 
-  monitor = process_manager.ProcessManager(vivado_args, True, True, True)
+  monitor = process_manager.ProcessMonitor(vivado_args, True, True, True)
   server = process_manager.ProcessServer(monitor, args.host, args.port)
   server.serve_forever()
 
