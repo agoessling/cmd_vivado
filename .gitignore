@@ -1,0 +1,6 @@
+__pycache__
+.Xil
+*.bit
+*.bin
+.hbs
+*.swp
