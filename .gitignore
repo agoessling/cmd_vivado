@@ -1,6 +1,7 @@
 __pycache__
-.Xil
-*.bit
-*.bin
-.hbs
 *.swp
+.Xil
+.hbs
+example/obj
+*.html
+*.xml

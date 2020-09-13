@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+import os
 import os.path
 import socket
 
@@ -28,6 +29,18 @@ def main():
   server = process_manager.ProcessServer(monitor, args.host, args.port)
   server.serve_forever()
 
+  temp_files = [
+      'usage_statistics_webtalk.html',
+      'usage_statistics_webtalk.xml',
+      'webtalk.log',
+      'webtalk.jou',
+  ]
+
+  for f in temp_files:
+    try:
+      os.remove(f)
+    except OSError:
+      pass
 
 if __name__ == '__main__':
   main()
