@@ -1,4 +1,4 @@
-# make_vivado
+# cmd_vivado
 
 This package provides a mechanism for interacting with the [Xilinx Vivado
 IDE](https://www.xilinx.com/products/design-tools/vivado.html) through a
@@ -9,7 +9,7 @@ build tools such as [Make](https://www.gnu.org/software/make/manual/make.html).
 
 ## Usage
 
-`make_vivado` works by running the Vivado IDE in Tcl mode as a server
+`cmd_vivado` works by running the Vivado IDE in Tcl mode as a server
 (`vivado_server.py`).  This is advantageous as Vivado takes several (~8 on my
 current machine) seconds to start up.  The client (`vivado_client.py`) provides
 a simplified command line interface to the synthesize, place, route, and program
@@ -46,13 +46,13 @@ Further information can be sought with the `--help` option.
 make all
 ```
 
-The provided `Makefile` shows how to combine `make_vivado` with a build tool for
+The provided `Makefile` shows how to combine `cmd_vivado` with a build tool for
 a rudimentary workflow.  Verbosity can be increase with `make VERBOSE=1`.
 
 ## Example Project
 
 The `example` directory contains the simplest possible project that demonstrates
-`make_vivado` use with a `Makefile`.  It is targeted at the [Digilent Arty A7
+`cmd_vivado` use with a `Makefile`.  It is targeted at the [Digilent Arty A7
 A35T](https://reference.digilentinc.com/reference/programmable-logic/arty-a7/start)
 development board.
 
@@ -69,7 +69,7 @@ development board.
 
 ## Status
 
-Currently `make_vivado` has only the features required for the simplest
+Currently `cmd_vivado` has only the features required for the simplest
 demonstration.  I expect many features will need to be added for it to be useful
 in non-trivial projects, but hopefully this framework will provide a good
 starting point.  I am not a FPGA expert and am learning as I go and am open to
