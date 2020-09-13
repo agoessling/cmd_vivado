@@ -47,7 +47,7 @@ make all
 ```
 
 The provided `Makefile` shows how to combine `cmd_vivado` with a build tool for
-a rudimentary workflow.  Verbosity can be increase with `make VERBOSE=1`.
+a rudimentary workflow.  Verbosity can be increased with `make VERBOSE=1`.
 
 ## Example Project
 
@@ -72,8 +72,7 @@ development board.
 Currently `cmd_vivado` has only the features required for the simplest
 demonstration.  I expect many features will need to be added for it to be useful
 in non-trivial projects, but hopefully this framework will provide a good
-starting point.  I am not a FPGA expert and am learning as I go and am open to
-suggestions.
+starting point.  I am learning about FPGAs as I go, and I welcome suggestions.
 
 ### Wish List
 
